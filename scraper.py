@@ -39,16 +39,16 @@ def send_email():
       server.starttls()
       server.ehlo()
 
-      server.login('panupong.wong@gmail.com','cggdzywsetkdgwzi')
+      server.login('@gmail.com','XXXXXX')
 
-      tolist = ['panupong.wong@gmail.com','panupong.wong@gmail.com']
+      tolist = ['@gmail.com','@gmail.com']
       subject = 'Price fell down'
       body = 'Check the amazon link https://www.amazon.de/dp/B07CXGF728/ref=cm_gf_aAN_i4_d_p0_c0_qd0____________________GlFMw8hzL7m68jTPwUNi'
 
       msg = f'Subject: {subject}\n\n{body}'
 
       server.sendmail(
-            'panupong.wong@gmail.com',
+            '@gmail.com',
             tolist,
             msg
       )
