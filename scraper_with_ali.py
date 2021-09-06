@@ -55,16 +55,16 @@ def send_email():
       server.starttls()
       server.ehlo()
 
-      server.login('panupong.wong@gmail.com','gvbfuelocahlucmf')  #get password from google password API
+      server.login('@gmail.com','XXXXXXXXX')  #get password from google password API
 
-      tolist = ['panupong.wong@gmail.com','panupong.wong@gmail.com']
+      tolist = ['@gmail.com','@gmail.com']
       subject = 'Price fell down'
       body = 'Check the Aliexpress link>>>'+URL
 
       msg = f'Subject: {subject}\n\n{body}'
 
       server.sendmail(
-            'panupong.wong@gmail.com',
+            '@gmail.com',
             tolist,
             msg
       )
